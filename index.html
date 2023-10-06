@@ -17,26 +17,519 @@
   </head>
   <body>
     <!-- ======HEADER=====  -->
-    <load src="partials/header.html" />
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="header-logo" href="./index.html"
+            ><img
+              src="./img/icons/logo.svg"
+              alt="Logo image"
+              width="44"
+              height="39"
+          /></a>
+          <ul class="header-link-list">
+            <li><a class="header-link" href="#about-us">About us</a></li>
+            <li>
+              <a class="header-link" href="#our-collection">Our collection </a>
+            </li>
+            <li><a class="header-link" href="#order">CUSTOMER ORDER</a></li>
+            <li>
+              <a class="header-link" href="#testimonials">TEstimonials</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="header-address">
+          <ul class="header-media-list">
+            <li class="header-item-tel">
+              <a class="header-tel-link" href="tel:+380684439426"
+                >+380 (68) 443-94-26</a
+              >
+            </li>
+            <li>
+              <a
+                class="header-media-link"
+                href="https://www.facebook.com/goITclub"
+                target="_blank"
+                ><svg width="28" height="28">
+                  <use href="./img/icons/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-media-link"
+                href="https://www.instagram.com/goitclub"
+                target="_blank"
+                ><svg width="28" height="28">
+                  <use href="./img/icons/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="header-media-link"
+                href="https://www.youtube.com/c/GoIT"
+                target="_blank"
+                ><svg width="28" height="28">
+                  <use href="./img/icons/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <button class="header-btn-menu" type="button" id="btn-open-menu">
+                <svg width="44" height="30">
+                  <use href="./img/icons/symbol-defs.svg#icon-menu"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
     <!-- ======MAIN======= -->
     <main>
       <!-- ====HERO===== -->
-      <load src="partials/hero.html" />
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-title-btn-container">
+            <h1 class="hero-title">
+              Reviving the traditional
+              <span class="yellow-text">Ukrainian</span> artistry in every
+              stitch.
+            </h1>
+            <a class="hero-btn" href="#order">
+              Order
+              <svg class="hero-btn-icon" width="26" height="15">
+                <use href="./img/icons/symbol-defs.svg#icon-arow"></use>
+              </svg>
+            </a>
+          </div>
+          <img
+            class="hero-img"
+            srcset="
+              ./img/hero/hero-img-mob.jpg        335w,
+              ./img/hero/hero-img-mob@2x.jpg     670w,
+              ./img/hero/hero-img-tab.jpg        413w,
+              ./img/hero/hero-img-tab@2x.jpg     826w,
+              ./img/hero/hero-img-desktop.jpg    392w,
+              ./img/hero/hero-img-desktop@2x.jpg 784w
+            "
+            sizes="(min-width:1280px) 392px, (min-width:768px) 413px, (max-width:767px) 335px"
+            src="./img/hero/hero-img-mob.jpg"
+            alt="girl in embroidered shirt"
+          />
+          <div class="hero-icon-container">
+            <svg class="hero-icon" width="52" height="51">
+              <use href="./img/icons/symbol-defs.svg#icon-star"></use>
+            </svg>
+            <p class="hero-icon-text">all embroidery is made by hand</p>
+          </div>
+          <div class="hero-vyshivanka">
+            <img
+              class="vyshivanka-img"
+              width="139"
+              height="197"
+              srcset="./img/hero/group.png 1x, ./img/hero/group@2x.png 2x"
+              src="./img/hero/group.png"
+              alt="vyshivanka"
+            />
+          </div>
+        </div>
+      </section>
+
       <!-- ====ABOUT US=====  -->
-      <load src="partials/about-us.html" />
+      <section class="aboutus" id="about-us">
+        <div class="container aboutus-container">
+          <div>
+            <h2 class="aboutus-title">About Us</h2>
+            <p class="aboutus-paragraph aboutus-paragraph-first">
+              The store "Vyshyvanka Vibes" is a place where traditional
+              Ukrainian vyshyvanka comes to life with new zest and style. Our
+              store offers a wide selection of high-quality and authentic
+              embroidery, which combines the elegance of traditional needlework
+              and modern design.
+            </p>
+            <p class="aboutus-paragraph">
+              In "Vyshyvanka Vibes" you will find various models of embroidery,
+              from classic to modern, corresponding to the latest fashion
+              trends. Our embroidery is made using natural fabrics and is
+              embroidered by highly qualified craftsmen who convey the beauty of
+              Ukrainian culture in every detail.We believe that vyshyvanka is
+              not just clothing, but a symbol of national pride, the heritage of
+              our ancestors and a way of expressing one's individuality. Each
+              embroidery from "Vyshyvanka Vibes" has its own unique history and
+              symbolism, which gives it a special meaning.
+            </p>
+          </div>
+          <div class="aboutus-img-container">
+            <img
+              class="aboutus-img"
+              srcset="
+                ./img/aboutus/aboutusmobile.jpg     335w,
+                ./img/aboutus/aboutusmobile2x.jpg   670w,
+                ./img/aboutus/aboutustablet.jpg     704w,
+                ./img/aboutus/aboutustablet2x.jpg  1408w,
+                ./img/aboutus/aboutusdesktop.jpg    545w,
+                ./img/aboutus/aboutusdesktop2x.jpg 1090w
+              "
+              sizes="(min-width:1280px) 545px, (min-width:768px) 704px, (max-width:767px) 335px"
+              src="./img/aboutus/aboutusmobile.jpg"
+              alt="shirt sleeve"
+            />
+          </div>
+        </div>
+      </section>
+
       <!-- ====OUR COLLECTION===== -->
-      <load src="partials/our-collection.html" />
+      <section class="section-collection" id="our-collection">
+        <div class="container collection">
+          <img
+            class="collection-elements"
+            srcset="
+              ./img/our-collection/element-collection-desktop.png 337w,
+              ./img/our-collection/element-collection-mob.png     199w
+            "
+            sizes="(min-width:768px) 337px, (min-width:320px) 199px"
+            src="./img/our-collection/element-collection-mob.png"
+            alt="elemets"
+          />
+          <h2 class="collection-title">Our collection</h2>
+          <ul class="collection-list">
+            <li class="collection-item">
+              <div class="collection-img-wrapper">
+                <img
+                  class="collection-img"
+                  srcset="
+                    ./img/our-collection/poltava-desktop.jpg    347w,
+                    ./img/our-collection/poltava-desktop@2x.jpg 694w,
+                    ./img/our-collection/poltava-tab.jpg        342w,
+                    ./img/our-collection/poltava-tab@2x.jpg     684w,
+                    ./img/our-collection/poltava-mob.jpg        335w,
+                    ./img/our-collection/poltava-mob@2x.jpg     670w
+                  "
+                  sizes="(min-width:1280px) 347px, (min-width:768px) 342px, (min-width:320px) 335px"
+                  src="./img/our-collection/poltava-mob.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="collection-name-wrapper">
+                <h3 class="collection-img-title">
+                  august poltava women's blousering
+                </h3>
+                <p class="collection-price">3300 UAH</p>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="collection-img-wrapper">
+                <img
+                  class="collection-img"
+                  srcset="
+                    ./img/our-collection/gorgany-desktop.jpg    347w,
+                    ./img/our-collection/gorgany-desktop@2x.jpg 694w,
+                    ./img/our-collection/gorgany-tab.jpg        342w,
+                    ./img/our-collection/gorgany-tab@2x.jpg     684w,
+                    ./img/our-collection/gorgany-mob.jpg        335w,
+                    ./img/our-collection/gorgany-mob@2x.jpg     670w
+                  "
+                  sizes="(min-width:1280px) 347px, (min-width:768px) 342px, (max-width:767px) 335px"
+                  src="./img/our-collection/gorgany-mob.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="collection-name-wrapper">
+                <h3 class="collection-img-title">women's blouse gorgany</h3>
+                <p class="collection-price">3350 UAH</p>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="collection-img-wrapper">
+                <img
+                  class="collection-img"
+                  srcset="
+                    ./img/our-collection/crimea-desktop.jpg    347w,
+                    ./img/our-collection/crimea-desktop@2x.jpg 694w,
+                    ./img/our-collection/crimea-tab.jpg        342w,
+                    ./img/our-collection/crimea-tab@2x.jpg     684w,
+                    ./img/our-collection/crimea-mob.jpg        335w,
+                    ./img/our-collection/crimea-mob@2x.jpg     670w
+                  "
+                  sizes="(min-width:1280px) 347px, (min-width:768px) 342px, (max-width:767px) 335px"
+                  src="./img/our-collection/crimea-mob.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="collection-name-wrapper">
+                <h3 class="collection-img-title">women's blouse crimea</h3>
+                <p class="collection-price">4000 UAH</p>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="collection-img-wrapper">
+                <img
+                  class="collection-img"
+                  srcset="
+                    ./img/our-collection/verkhovina-desktop.jpg    347w,
+                    ./img/our-collection/verkhovina-desktop@2x.jpg 694w,
+                    ./img/our-collection/verkhovina-tab.jpg        342w,
+                    ./img/our-collection/verkhovina-tab@2x.jpg     684w,
+                    ./img/our-collection/verkhovina-mob.jpg        335w,
+                    ./img/our-collection/verkhovina-mob@2x.jpg     670w
+                  "
+                  sizes="(min-width:1280px) 347px, (min-width:768px) 342px, (max-width:767px) 335px"
+                  src="./img/our-collection/verkhovina-mob.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="collection-name-wrapper">
+                <h3 class="collection-img-title">men's shirt verkhovina</h3>
+                <p class="collection-price">3100 UAH</p>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="collection-img-wrapper">
+                <img
+                  class="collection-img"
+                  srcset="
+                    ./img/our-collection/mountain-desktop.jpg    347w,
+                    ./img/our-collection/mountain-desktop@2x.jpg 694w,
+                    ./img/our-collection/mountain-tab.jpg        342w,
+                    ./img/our-collection/mountain-tab@2x.jpg     684w,
+                    ./img/our-collection/mountain-mob.jpg        335w,
+                    ./img/our-collection/mountain-mob@2x.jpg     670w
+                  "
+                  sizes="(min-width:1280px) 347px, (min-width:768px) 342px, (max-width:767px) 335px"
+                  src="./img/our-collection/mountain-mob.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="collection-name-wrapper">
+                <h3 class="collection-img-title">mountain men's shirt</h3>
+                <p class="collection-price">3300 UAH</p>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="collection-img-wrapper">
+                <img
+                  class="collection-img"
+                  srcset="
+                    ./img/our-collection/yasen-desktop.jpg    347w,
+                    ./img/our-collection/yasen-desktop@2x.jpg 694w,
+                    ./img/our-collection/yasen-tab.jpg        342w,
+                    ./img/our-collection/yasen-tab@2x.jpg     684w,
+                    ./img/our-collection/yasen-mob.jpg        335w,
+                    ./img/our-collection/yasen-mob@2x.jpg     670w
+                  "
+                  sizes="(min-width:1280px) 347px, (min-width:768px) 342px, (max-width:767px) 335px"
+                  src="./img/our-collection/yasen-mob.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="collection-name-wrapper">
+                <h3 class="collection-img-title">men's shirt yasen</h3>
+                <p class="collection-price">1700 UAH</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- ====BACKGROUND IMG=====  -->
-      <load src="partials/back-img.html" />
+      <section class="back-img-section">
+        <h2 class="visually-hidden">Most popular model</h2>
+      </section>
       <!-- ====YOUR ORDER=====-->
-      <load src="partials/your-order.html" />
+      <section class="your-order-section" id="order">
+        <div class="container your-order-container">
+          <div>
+            <h2 class="yourorder-title">
+              <span class="yourorder-title-part">Your order</span> is our
+              priority: Personalized approach and quality of service
+            </h2>
+            <form class="your-order-container-form">
+              <input
+                type="text"
+                name="name"
+                id="full_name"
+                class="order-input full__name"
+                placeholder="Enter your full name"
+                required
+                pattern="text"
+              />
+              <input
+                type="email"
+                name="email"
+                id="your_email"
+                class="order-input your__email"
+                placeholder="Enter your email"
+                required
+                pattern="email"
+              />
+              <textarea
+                name="comment"
+                id="your_comments"
+                cols="63"
+                rows="10"
+                class="teaxterea-comment"
+                placeholder="Comments"
+              ></textarea>
+              <button type="submit" class="submit-order-arrow">
+                SEND
+                <svg class="icon-order" width="26" height="19">
+                  <use href="./img/icons/symbol-defs.svg#icon-arow"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="img-container">
+            <img
+              srcset="
+                ./img/order-img/order-girl-tablet.jpg     638w,
+                ./img/order-img/order-girl-tablet@2x.jpg 1276w,
+                ./img/order-img/order-girl-comp.jpg       524w,
+                ./img/order-img/order-girl-comp@2x.jpg   1048w
+              "
+              sizes="(min-width:1280px) 524px, (max-width:1279px) 638px"
+              src="./img/order-img/order-girl-comp@2x.jpg"
+              alt="Photo Your Order"
+              class="img-your_order"
+            />
+          </div>
+        </div>
+      </section>
+
       <!-- ====TESTIMONIALS===== -->
-      <load src="partials/testimonials.html" />
+      <section class="testimonials-section" id="testimonials">
+        <div class="container">
+          <h2 class="testimonials-title">Testimonials</h2>
+          <ul class="testimonials-list">
+            <li class="testimonials-card maria">
+              <img
+                class="img-testimonials"
+                srcset="./img/testimonials-img/maria@2x.png 2x"
+                src="./img/testimonials-img/maria.png"
+                width="64"
+                height="64"
+                alt="Photo of Maria Tkachuk"
+              />
+
+              <h3 class="name-testimonials">Maria Tkachuk</h3>
+
+              <p class="text-testimonials">
+                I was pleasantly surprised by the variety of embroidery offered
+                by Vyshyvanka Vibes. They have models for every taste - from
+                classic to modern. I bought an embroidered dress to celebrate a
+                special occasion and received impeccable service and refinement
+                in every detail.
+              </p>
+            </li>
+            <li class="testimonials-card sergey">
+              <img
+                class="img-testimonials"
+                srcset="./img/testimonials-img/sergey@2x.png 2x"
+                src="./img/testimonials-img/sergey.png"
+                width="64"
+                height="64"
+                alt="Photo of Sergey Rybachok"
+              />
+
+              <h3 class="name-testimonials">Sergey Rybachok</h3>
+
+              <p class="text-testimonials">
+                Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka
+                are simply masterpieces! I fell in love with the quality of the
+                materials and the skill of the artisans behind each product.
+                This is my favorite embroidery shop where I always find
+                something special and unique.
+              </p>
+            </li>
+            <li class="testimonials-card natalia">
+              <img
+                class="img-testimonials"
+                srcset="./img/testimonials-img/natalia@2x.png 2x"
+                src="./img/testimonials-img/natalia.png"
+                width="64"
+                height="64"
+                alt="Photo of Natalia Chatuk"
+              />
+
+              <h3 class="name-testimonials">Natalia Chatuk</h3>
+
+              <p class="text-testimonials">
+                Vyshyvanka Vibes is a real find for everyone who appreciates
+                Ukrainian culture. Their embroidery reflects the spirit and
+                traditions of our people. I not only buy embroidered shirts for
+                myself, but also give them to my friends abroad as a symbol of
+                our beauty and national pride.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- ======FOOTER===== -->
-    <load src="partials/footer.html" />
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-list-container">
+          <ul class="footer-list-link">
+            <li><a class="footer-link" href="#about-us">ABOUT US</a></li>
+            <li>
+              <a class="footer-link" href="#our-collection">OUR COLLECTION</a>
+            </li>
+          </ul>
+          <ul class="footer-list-link">
+            <li><a class="footer-link" href="#order">CUSTOMER ORDER</a></li>
+            <li>
+              <a class="footer-link" href="#testimonials">TESTIMONIALS</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-text-container">
+          <p class="footer-paragraph">
+            A touch of
+            <span class="footer-paragraph-part">Ukrainian</span> culture in
+            every embroidery
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- ======MOBAIL MENU===== -->
-    <load src="partials/mobail-menu.html" />
+    <div class="burger" id="mobil-menu-burger">
+      <div class="block--tel-btn">
+        <a class="mobile-tel-link" href="tel:+380684439426"
+          >+380 (68) 443-94-26</a
+        >
+        <button
+          class="btn-close-mibile-menu"
+          id="btn-close-burger"
+          type="button"
+        >
+          <svg class="icon-close" width="24" height="24">
+            <use href="./img/icons/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="menu-ul">
+        <li class="mobile-list-item">
+          <a class="mobile-link" href="#about-us">ABOUT US</a>
+        </li>
+        <li class="mobile-list-item">
+          <a class="mobile-link" href="#our-collection">OUR COLLECTION</a>
+        </li>
+        <li class="mobile-list-item">
+          <a class="mobile-link" href="#order">CUSTOMER ORDER</a>
+        </li>
+        <li class="mobile-list-item">
+          <a class="mobile-link" href="#testimonials">TESTIMONIALS</a>
+        </li>
+      </ul>
+      <img
+        class="mobile-photo"
+        src="./img/icons/img-mobile/elements-min.png"
+        alt=""
+      />
+    </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
